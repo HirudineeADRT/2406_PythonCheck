@@ -1,0 +1,171 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "eeafbb8e-feda-47d8-852a-9d85b65248e3": {
+        "id": "eeafbb8e-feda-47d8-852a-9d85b65248e3",
+        "parent": null,
+        "name": "2406_PythonCheck",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "9bc646b8-7d7c-4e93-ba4e-ff36095c9025",
+          "955c7df8-8025-4fc6-a548-3ffe6a3875b7",
+          "817ec159-0814-458e-ae47-ee8b3ac57941"
+        ],
+        "isRemovable": false,
+        "filePath": "2406_PythonCheck"
+      },
+      "9bc646b8-7d7c-4e93-ba4e-ff36095c9025": {
+        "id": "9bc646b8-7d7c-4e93-ba4e-ff36095c9025",
+        "parent": "eeafbb8e-feda-47d8-852a-9d85b65248e3",
+        "name": "pythonhiru.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "2406_PythonCheck/pythonhiru.py",
+        "code": "from pythonsub/test.py import add\n\ndef handler(event, context):\n    print (context)\n    return {\"message\": \"Successfully executed\"}\n",
+        "config": {
+          "runtime": "python3.6",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigusEast1TestAPIhiruany",
+            "config": {}
+          }
+        ]
+      },
+      "955c7df8-8025-4fc6-a548-3ffe6a3875b7": {
+        "id": "955c7df8-8025-4fc6-a548-3ffe6a3875b7",
+        "parent": "eeafbb8e-feda-47d8-852a-9d85b65248e3",
+        "name": "__init__.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "2406_PythonCheck/__init__.py",
+        "code": ""
+      },
+      "817ec159-0814-458e-ae47-ee8b3ac57941": {
+        "id": "817ec159-0814-458e-ae47-ee8b3ac57941",
+        "parent": "eeafbb8e-feda-47d8-852a-9d85b65248e3",
+        "name": "pythonsub",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "ad464da8-c4f9-4e49-b22d-49f0570ee106",
+          "ea4adb96-233f-49fc-8ca7-abbfdc318c99"
+        ],
+        "isRemovable": true,
+        "filePath": "2406_PythonCheck/pythonsub"
+      },
+      "ad464da8-c4f9-4e49-b22d-49f0570ee106": {
+        "id": "ad464da8-c4f9-4e49-b22d-49f0570ee106",
+        "parent": "817ec159-0814-458e-ae47-ee8b3ac57941",
+        "name": "test.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "2406_PythonCheck/pythonsub/test.py",
+        "code": "def add(x, y):\r\n   return x + y\r\n\r\ndef subtract(x, y):\r\n   return x - y\r\n\r\ndef multiply(x, y):\r\n   return x * y\r\n\r\ndef divide(x, y):\r\n   return x / y"
+      },
+      "ea4adb96-233f-49fc-8ca7-abbfdc318c99": {
+        "id": "ea4adb96-233f-49fc-8ca7-abbfdc318c99",
+        "parent": "817ec159-0814-458e-ae47-ee8b3ac57941",
+        "name": "__init__.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "2406_PythonCheck/pythonsub/__init__.py",
+        "code": ""
+      }
+    },
+    "deletedFiles": [
+      "2406_PythonCheck/lambda.js"
+    ],
+    "rootNode": "eeafbb8e-feda-47d8-852a-9d85b65248e3",
+    "openFiles": [
+      "9bc646b8-7d7c-4e93-ba4e-ff36095c9025",
+      "ad464da8-c4f9-4e49-b22d-49f0570ee106"
+    ],
+    "currentFileId": "9bc646b8-7d7c-4e93-ba4e-ff36095c9025",
+    "resources": {
+      "apigusEast1TestAPIhiruany": {
+        "name": "apigusEast1TestAPIhiruany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "TestAPI",
+          "apiId": "0itznun7w3",
+          "endpointType": "EDGE",
+          "rootResourceId": "h2lelj6j7k",
+          "existingResources": {
+            "/MyLambda": "98nqbj",
+            "/": "h2lelj6j7k",
+            "/test123": "kw67fb",
+            "/testtwospeciallambda": "q4szm3",
+            "/testtwospecialkumutest": "wey3lk"
+          },
+          "resourceMode": 0,
+          "resourceName": "hiru",
+          "resourcePath": "/hiru",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "Test",
+          "stageDeploymentId": "jvoy8w",
+          "mode": 1
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      },
+      {
+        "lambdaId": "9bc646b8-7d7c-4e93-ba4e-ff36095c9025",
+        "varKey": "PYTHONPATH",
+        "varValue": "/var/runtime:/var/task/2406_PythonCheck",
+        "shouldPersist": true,
+        "displayOnly": false,
+        "editable": true
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "2406_PythonCheck",
+    "projectDescription": "This project was created to test the python projects",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1561357434388
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "2406_PythonCheck",
+      "url": "https://github.com/HirudineeADRT/2406_PythonCheck"
+    }
+  }
+}
