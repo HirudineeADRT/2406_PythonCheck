@@ -10,7 +10,8 @@
         "children": [
           "9bc646b8-7d7c-4e93-ba4e-ff36095c9025",
           "955c7df8-8025-4fc6-a548-3ffe6a3875b7",
-          "817ec159-0814-458e-ae47-ee8b3ac57941"
+          "817ec159-0814-458e-ae47-ee8b3ac57941",
+          "4aa0a66a-fd9d-4371-af87-bb0bf159efb0"
         ],
         "isRemovable": false,
         "filePath": "2406_PythonCheck"
@@ -24,7 +25,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "2406_PythonCheck/pythonhiru.py",
-        "code": "from pythonsub/test.py import add\n\ndef handler(event, context):\n    print (context)\n    return {\"message\": \"Successfully executed\"}\n",
+        "code": "from pythonsub.test import add\n\ndef handler(event, context):\n\n    print (context)\n    return {\"message\": \"Successfully executed\",add(1,3)}\n",
         "config": {
           "runtime": "python3.6",
           "handler": "handler",
@@ -84,17 +85,35 @@
         "isRemovable": true,
         "filePath": "2406_PythonCheck/pythonsub/__init__.py",
         "code": ""
+      },
+      "4aa0a66a-fd9d-4371-af87-bb0bf159efb0": {
+        "id": "4aa0a66a-fd9d-4371-af87-bb0bf159efb0",
+        "parent": "eeafbb8e-feda-47d8-852a-9d85b65248e3",
+        "name": "test123.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "2406_PythonCheck/test123.js",
+        "code": "exports.handler = function(event, context, callback) {\n    //test123\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
       }
     },
-    "deletedFiles": [
-      "2406_PythonCheck/lambda.js"
-    ],
+    "deletedFiles": [],
     "rootNode": "eeafbb8e-feda-47d8-852a-9d85b65248e3",
     "openFiles": [
       "9bc646b8-7d7c-4e93-ba4e-ff36095c9025",
-      "ad464da8-c4f9-4e49-b22d-49f0570ee106"
+      "ad464da8-c4f9-4e49-b22d-49f0570ee106",
+      "4aa0a66a-fd9d-4371-af87-bb0bf159efb0"
     ],
-    "currentFileId": "9bc646b8-7d7c-4e93-ba4e-ff36095c9025",
+    "currentFileId": "4aa0a66a-fd9d-4371-af87-bb0bf159efb0",
     "resources": {
       "apigusEast1TestAPIhiruany": {
         "name": "apigusEast1TestAPIhiruany",
@@ -159,7 +178,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1561357434388
+    "lastSave": 1561362215716
   },
   "VCS_STATE": {
     "provider": "GitHub",

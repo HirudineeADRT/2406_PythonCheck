@@ -1,5 +1,6 @@
-from pythonsub/test.py import add
+from pythonsub.test import add
 
 def handler(event, context):
+
     print (context)
-    return {"message": "Successfully executed"}
+    return {"message": "Successfully executed",add(1,3)}
