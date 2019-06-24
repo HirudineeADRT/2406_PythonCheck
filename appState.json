@@ -25,7 +25,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "2406_PythonCheck/pythonhiru.py",
-        "code": "from pythonsub.test import add\n\ndef handler(event, context):\n\n    print (context)\n    return {\"message\": \"Successfully executed\",add(1,3)}\n",
+        "code": "from pythonsub.test import add\n\ndef handler(event, context):\n\n    print (context)\n    ///test123\n    return {\"message\": \"Successfully executed\",add(1,3)}\n",
         "config": {
           "runtime": "python3.6",
           "handler": "handler",
@@ -113,7 +113,7 @@
       "ad464da8-c4f9-4e49-b22d-49f0570ee106",
       "4aa0a66a-fd9d-4371-af87-bb0bf159efb0"
     ],
-    "currentFileId": "4aa0a66a-fd9d-4371-af87-bb0bf159efb0",
+    "currentFileId": "9bc646b8-7d7c-4e93-ba4e-ff36095c9025",
     "resources": {
       "apigusEast1TestAPIhiruany": {
         "name": "apigusEast1TestAPIhiruany",
@@ -178,7 +178,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1561362215716
+    "lastSave": 1561362342878
   },
   "VCS_STATE": {
     "provider": "GitHub",
